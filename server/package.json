@@ -9,7 +9,7 @@
     "db:seed": "tsx prisma/seed.ts",
     "fyp:reset": "npx prisma migrate reset --force && npx prisma db seed",
     "seed": "tsx prisma/seed.ts",
-    "build": "tsc --noEmit",
+    "build": "prisma generate",
     "warmup": "tsx scripts/warmup.ts"
   },
   "keywords": [],
