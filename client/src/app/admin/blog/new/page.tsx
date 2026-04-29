@@ -42,7 +42,7 @@ export default function NewBlogPostPage() {
     if (!title || !content) return;
     setIsSubmitting(true);
     try {
-      const res = await api.post('/admin/blog/create', {
+const res = await api.post<{ success: boolean }>('/admin/blog/create', {   
         title,
         excerpt: content.substring(0, 160) + '...',
         content,
