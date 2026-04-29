@@ -1,0 +1,237 @@
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.hero {
+  background: #0f172a;
+  color: white;
+  padding: 80px 24px 100px;
+}
+
+.heroInner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 32px;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.content {
+  max-width: 1000px;
+  margin: -40px auto 80px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.mainCol {
+  background: white;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.featuresList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.checkIcon {
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ctaCard {
+  background: #f1f5f9;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.ctaCard h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.ctaCard p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #0ea5e9;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: #0284c7;
+}
+
+.infoCard, .testimonialCard {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+}
+
+.infoCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 24px;
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.infoRow span {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.infoRow strong {
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 24px 0;
+}
+
+.calcLink {
+  display: block;
+  text-align: center;
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.calcLink:hover {
+  text-decoration: underline;
+}
+
+.quote {
+  font-style: italic;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.author strong {
+  display: block;
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.author span {
+  display: block;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    margin-top: -24px;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .mainCol {
+    padding: 32px 24px;
+  }
+}
